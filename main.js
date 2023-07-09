@@ -138,6 +138,11 @@ function formatNumber(num) {
 const searchForm = document.getElementById('search-form');
 const searchButton = document.getElementById('search-button');
 const cityInput = document.getElementById('city-input');
+
+searchButton.addEventListener('click', function() {
+  searchButton.classList.add('scale-in-center');
+});
+
 searchForm.addEventListener('submit', function(event) {
   event.preventDefault();
   const city = cityInput.value;
